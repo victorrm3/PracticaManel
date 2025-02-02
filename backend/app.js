@@ -83,6 +83,13 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Error interno en el servidor' });
 });
 
+// EvoUsers - Registro de peticiones HTTP
+app.use((req, res, next) => {
+  console.log(`Petición: ${req.method} ${req.url}`);
+  next();
+});
+
+
 app.listen(PORT, () => {
   console.log(`Servidor ejecutándose en http://localhost:${PORT}`);
 });
