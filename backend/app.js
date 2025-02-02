@@ -5,7 +5,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const { readDB, writeDB } = require('./db');
 const app = express();
-const PORT = 3000;
+const PORT = 4000; // URG111 - Cambio de puerto solicitado por el cliente
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -82,6 +82,8 @@ app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({ error: 'Error interno en el servidor' });
 });
+
+
 
 app.listen(PORT, () => {
   console.log(`Servidor ejecutándose en http://localhost:${PORT}`);
