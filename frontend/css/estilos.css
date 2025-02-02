@@ -1,13 +1,13 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-image:url(../img/fondo-usuarios.jpg);
+    background-image:url(../img/backgrounds/fondo-usuarios.jpg);
   }
 
   header {
-    background: #052c66;
+    background-color: #3f94b6;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -118,7 +118,7 @@ body {
   }
   
   footer {
-    background: #052c66;
+    background-color: #3f94b6;
     color: #fff;
     text-align: center;
     padding: 10px 0;
